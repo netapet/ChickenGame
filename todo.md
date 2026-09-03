@@ -1,0 +1,8 @@
+- replace the unused pictures, with ai-generated
+- create a demo mode where if you don't click anything, you go into a rotating presentation of the animals/chickens. any key to come back main screen
+- create all the bling generate the same goat from the back with his stuff. 
+  - note you need a pink and white versions
+  - note you need 0deg/45deg. 
+  - consider making them a layer to be stacked on the image
+- when you get a new record, splash that on the screen, with a silly chicken. 
+- when you die, splash the animal that hit you large on the screen

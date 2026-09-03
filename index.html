@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe166">
+  <meta name="description" content="Goat Kart-ish: a ridiculous farm runner about eggs, chickens, and one determined goat.">
+  <title>GOAT KART-ISH</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Goat Kart-ish home">
+        <span>GOAT</span><strong>KART-ISH</strong>
+      </a>
+      <div class="hud" aria-live="polite">
+        <div><span>EGG WALLET</span><strong id="eggCount">0</strong></div>
+        <div><span>DISTANCE</span><strong><b id="distance">0</b>m</strong></div>
+        <div><span>BEST</span><strong><b id="best">0</b>m</strong></div>
+        <div class="health-stat"><span>HEALTH</span><div id="healthBar" class="health-bar" role="progressbar" aria-label="Goat health" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><i id="healthFill"></i></div></div>
+      </div>
+      <div class="header-actions">
+        <button id="shopButton" class="icon-button shop-button" type="button">SHOP ✦</button>
+        <button id="soundButton" class="icon-button" type="button" aria-label="Change audio mode">AUDIO: MUSIC</button>
+      </div>
+    </header>
+
+    <section class="game-wrap" aria-label="Goat racing game">
+      <canvas id="game" aria-label="A goat runs down a farm track, collecting eggs and dodging chickens" tabindex="0"></canvas>
+
+      <div id="startScreen" class="overlay">
+        <div class="burst" aria-hidden="true">BAGAWK!</div>
+        <div class="splash-cows" aria-hidden="true">
+          <img id="splashAnimalA" class="splash-primary" src="assets/highland-cow-shaggy-3d.png" alt="">
+          <img id="splashAnimalB" class="splash-secondary" src="assets/cow-3d.png" alt="">
+        </div>
+        <p class="eyebrow">THE WORLD'S LEAST SANCTIONED FARM SPORT</p>
+        <h1>RUN LIKE<br><em>THE GOAT.</em></h1>
+        <p class="intro">Swerve through a deeply unreasonable number of chickens. Collect their eggs. Question nothing.</p>
+        <button id="startButton" class="primary-button" type="button">START THE BLEAT</button>
+        <p class="controls-hint"><kbd>←</kbd><kbd>→</kbd> steer &nbsp; <kbd>↑</kbd><kbd>↓</kbd> edge forward/back &nbsp; <kbd>SPACE</kbd> jump &nbsp; <span>or swipe + tap</span></p>
+      </div>
+
+      <div id="gameOverScreen" class="overlay hidden">
+        <p class="eyebrow">OFFICIAL RACE INCIDENT REPORT</p>
+        <h2>FOWL<br><em>PLAY!</em></h2>
+        <p id="finalLine" class="intro">You ran 0m and rescued 0 eggs.</p>
+        <button id="restartButton" class="primary-button" type="button">UN-RUFFLE &amp; RETRY</button>
+        <button id="gameOverShopButton" class="text-button" type="button">SPEND YOUR EGGS →</button>
+      </div>
+
+      <section id="shopScreen" class="shop-screen hidden" aria-label="Goat Boutique" aria-modal="true" role="dialog">
+        <div class="shop-panel">
+          <div class="shop-heading">
+            <div><p class="eyebrow">FARM-FRESH FASHION</p><h2>GOAT<br><em>BOUTIQUE</em></h2></div>
+            <div class="shop-wallet"><span>YOUR STASH</span><strong><b id="shopEggCount">0</b> EGGS</strong></div>
+            <button id="closeShopButton" class="shop-close" type="button" aria-label="Close shop">×</button>
+          </div>
+          <p class="shop-intro">Because being fast is temporary. Looking ridiculous is forever.</p>
+          <div id="shopGrid" class="shop-grid"></div>
+          <p id="shopMessage" class="shop-message" aria-live="polite">Collect eggs on the track. Exchange eggs for questionable taste.</p>
+        </div>
+      </section>
+
+      <div id="toast" class="toast" aria-live="polite">EGGCELLENT!</div>
+      <div class="mobile-controls" aria-label="Touch controls">
+        <button data-control="left" aria-label="Move left">←</button>
+        <button data-control="jump" aria-label="Jump">↑</button>
+        <button data-control="right" aria-label="Move right">→</button>
+      </div>
+    </section>
+
+    <footer>
+      <p><strong>PRO TIP:</strong> Chickens have right of way. Legally.</p>
+      <p>NO GOATS WERE CONSULTED IN THE MAKING OF THIS GAME.</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
