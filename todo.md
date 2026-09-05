@@ -8,5 +8,7 @@
 - [x] Add increasingly difficult levels, running pigs, and a farm festival finish.
 - [x] Guard active game screens from stale idle-demo callbacks.
 - [x] Enlarge and reposition the festival stalls and cast.
+- [x] Reduce the festival cast by 30% on phone-width screens.
+- [x] Reduce obstacle animals by 50% during phone-width runs.
 - [ ] Visually review vehicle accessory placement.
 - [ ] Confirm music playback in the target browser.
