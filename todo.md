@@ -1,8 +1,12 @@
-- replace the unused pictures, with ai-generated
-- create a demo mode where if you don't click anything, you go into a rotating presentation of the animals/chickens. any key to come back main screen
-- create all the bling generate the same goat from the back with his stuff. 
-  - note you need a pink and white versions
-  - note you need 0deg/45deg. 
-  - consider making them a layer to be stacked on the image
-- when you get a new record, splash that on the screen, with a silly chicken. 
-- when you die, splash the animal that hit you large on the screen
+- [x] Replace the unused pictures with generated farm characters.
+- [x] Add an idle rotating animal demo; any input returns to the main screen.
+- [x] Create stackable bling for the rear and 45-degree goat views.
+- [x] Support the white and pink goat variants.
+- [x] Show a silly chicken splash for a new record.
+- [x] Show the animal that caused a game over.
+- [x] Add surprise goals with egg rewards.
+- [x] Add increasingly difficult levels, running pigs, and a farm festival finish.
+- [x] Guard active game screens from stale idle-demo callbacks.
+- [x] Enlarge and reposition the festival stalls and cast.
+- [ ] Visually review vehicle accessory placement.
+- [ ] Confirm music playback in the target browser.
