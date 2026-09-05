@@ -10,5 +10,6 @@
 - [x] Enlarge and reposition the festival stalls and cast.
 - [x] Reduce the festival cast by 30% on phone-width screens.
 - [x] Reduce obstacle animals by 50% during phone-width runs.
+- [x] Restore phone chicks to 65% size and reduce phone egg pickups by 50%.
 - [ ] Visually review vehicle accessory placement.
 - [ ] Confirm music playback in the target browser.
